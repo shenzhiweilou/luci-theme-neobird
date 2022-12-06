@@ -392,6 +392,17 @@ p#aliyundrive-webdav_status b {
     color: var(--bg) !important;
 }
 
+/* 修复 接口 页面首个图标上移问题 */
+.ifacebox-body img:first-child {
+    vertical-align: bottom !important;
+}
+
+/* 修复 接口 页面 图标大小问题 */
+.cbi-section-table .cbi-value-field img {
+    width: 32px !important;
+    height: 32px !important;
+}
+
 /* 修复 接口-物理配置 页面图标显示问题 */
 .cbi-value-field ul li label img {
     padding: 16px;
@@ -434,8 +445,18 @@ img[src*="/luci-static/resources/icons/vlan.png"] {
     width: 0;
 }
 
+/* 补全缺失的图标 */
 img[src*="/luci-static/resources/icons/wifi.png"] {
     background-image: url(../images/wifi.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    padding: 0 0 0 32px;
+    width: 0;
+}
+
+img[src*="/luci-static/resources/icons/wifi_big.png"] {
+    background-image: url(../images/wifi_big.png);
     background-size: 32px 32px;
     height: 32px;
     width: 32px;
@@ -452,6 +473,16 @@ img[src*="/luci-static/resources/icons/tunnel.png"] {
     width: 0;
 }
 
+img[src*="/luci-static/resources/icons/switch.png"] {
+    background-image: url(../images/switch.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    padding: 0 0 0 32px;
+    width: 0;
+}
+/* --------------- */
+
 img[src*="/luci-static/resources/icons/ethernet_disabled.png"] {
     background-image: url(../images/ethernet_disabled.png);
     background-size: 32px 32px;
@@ -460,6 +491,8 @@ img[src*="/luci-static/resources/icons/ethernet_disabled.png"] {
     padding: 0 0 0 32px;
     width: 0;
 }
+
+
 #cbi-network-lan-ifname_multi img[src*="/luci-static/resources/icons/ethernet.png"],
 #cbi-network-1-_ifname img[src*="/luci-static/resources/icons/ethernet.png"],
 .ifacebadge img[src*="/luci-static/resources/icons/ethernet.png"]
