@@ -393,18 +393,18 @@ p#aliyundrive-webdav_status b {
 }
 
 /* 修复 接口 页面首个图标上移问题 */
-.ifacebox-body img:first-child {
+.ifacebox-body>img:first-child {
     vertical-align: bottom !important;
 }
 
 /* 修复 接口 页面 图标大小问题 */
-.cbi-section-table .cbi-value-field img {
+.cbi-section-table>.cbi-value-field>img {
     width: 32px !important;
     height: 32px !important;
 }
 
 /* 修复 接口-物理配置 页面图标显示问题 */
-.cbi-value-field ul li label img {
+.cbi-value-field>ul>li>label>img {
     padding: 16px;
 }
 
@@ -492,8 +492,7 @@ img[src*="/luci-static/resources/icons/ethernet_disabled.png"] {
     width: 0;
 }
 
-
-#cbi-network-lan-ifname_multi img[src*="/luci-static/resources/icons/ethernet.png"],
+/* 修复图标大小异常 */
 #cbi-network-1-_ifname img[src*="/luci-static/resources/icons/ethernet.png"],
 .ifacebadge img[src*="/luci-static/resources/icons/ethernet.png"]
  {
@@ -502,7 +501,7 @@ img[src*="/luci-static/resources/icons/ethernet_disabled.png"] {
     width: 16px;
     padding: 0 0 0 16px;
 }
-#cbi-network-lan-ifname_multi img[src*="/luci-static/resources/icons/ethernet_disabled.png"],
+
 #cbi-network-1-_ifname img[src*="/luci-static/resources/icons/ethernet_disabled.png"],
 .ifacebadge img[src*="/luci-static/resources/icons/ethernet_disabled.png"]
  {
