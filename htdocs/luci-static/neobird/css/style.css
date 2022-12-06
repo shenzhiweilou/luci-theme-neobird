@@ -392,6 +392,20 @@ p#aliyundrive-webdav_status b {
     color: var(--bg) !important;
 }
 
+/* 修复 接口-物理配置 页面图标显示问题 */
+.cbi-value-field ul li label img {
+    padding: 16px;
+}
+
+/* 添加首页设备图标 */
+img[src*="/luci-static/resources/icons/devices/pc.png"] {
+    background-image: url(../images/pc.png);
+    background-size: 32px 32px;
+    height: 32px;
+    padding: 0 0 0 32px;
+    width: 0;
+}
+
 /** img retina **/
 
 img[src*="/luci-static/resources/icons/port_up.png"] {
@@ -2128,7 +2142,7 @@ header > .container > .pull-right > * {
 #container\.nlbw\.ipv6 th,
 #container\.nlbw\.ipv6 td, 
 #container\.nlbw\.export th, 
-#container\.nlbw\.export td, 
+#container\.nlbw\.export td
  {
     padding: 3px;
     border-top: none;
@@ -2576,12 +2590,12 @@ body.lang_pl.node-main-login .cbi-value-title {
         margin: 0;
     }
 
-    #cbi-samba-cfg010f89-_tmpl .cbi-value-title,
+    #cbi-samba-cfg010f89-_tmpl .cbi-value-title
      {
         width: 15%;
 
     }
-     #cbi-samba-cfg010f89-_tmpl .cbi-value-field,
+     #cbi-samba-cfg010f89-_tmpl .cbi-value-field
 
       {
         width: 95%;        
