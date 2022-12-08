@@ -1287,7 +1287,8 @@ fieldset.cbi-section>table.cbi-section-table{
 }
 
 /* 修复无线概况缩进问题 */
-fieldset.cbi-section>table.cbi-section-table tr.cbi-section-table-row.cbi-rowstyle-1{
+/* 修复选择器错误 */
+fieldset.cbi-section>table.cbi-section-table tr.cbi-section-table-row.cbi-rowstyle-1>td:first-child{
     width: 0%;
 }
 
