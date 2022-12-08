@@ -1258,9 +1258,10 @@ fieldset > table > tbody > tr:nth-of-type(odd) {
 
 /* fix node-network-network */
 /* 修改此部分，使其可以应用在自己添加的接口上 */
-.cbi-value-field>.cbi-section-table>td:first-child {
-    width: 0;
-    height: 0;
+/* 修复未匹配 */
+.cbi-value-field>table>tbody>.cbi-section-table>td:first-child {
+    width: 0%;
+    height: 0%;
     padding: 0;
 }
 
@@ -1296,8 +1297,9 @@ div#container\.nlbw\.traffic {
     overflow: auto;
 }
 
+/* 限制宽度 */
 td#__status-ifc-signal {
-    width: 60px !important;
+    width: 15% !important;
 }
 
 td#__status-ifc-signal img[src*="/luci-static/resources/icons/bridge.png"] {
