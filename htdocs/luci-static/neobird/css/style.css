@@ -1253,11 +1253,6 @@ fieldset > table > tbody > tr:nth-of-type(odd) {
     width: 65%;
 }
 
-/* 修复登录页面在linux下偏移的问题 */
-form>.cbi-map .cbi-value-field {
-    width: 100%;
-}
-
 /* fix node-system-admin */
 .node-system-admin .cbi-value-field li div {
     padding: 0 !important;
@@ -2011,6 +2006,12 @@ header > .container > .pull-right > * {
     text-align: center;
     background-color: var(--bgwhite) !important;
 }
+
+/* 修复登录页面在linux下偏移的问题 */
+.node-main-login form>.cbi-map .cbi-value-field {
+    width: 100%;
+}
+
 .node-main-login .cbi-section-node > .cbi-value:nth-of-type(2n) {
     background: none;
 }
