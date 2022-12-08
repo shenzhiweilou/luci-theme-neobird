@@ -459,6 +459,12 @@ img[src*="/luci-static/resources/icons/signal-75-100.png"] {
     width: 0;
 }
 
+/* 修复信号详情页图标错误 */
+#__status-iw-signal>img {
+    background-size: 32px 32px !important;
+    padding: 0 0 0 32px !important;
+}
+
 /** img retina **/
 
 img[src*="/luci-static/resources/icons/port_up.png"] {
@@ -1240,7 +1246,7 @@ fieldset > table > tbody > tr:nth-of-type(odd) {
 }
 
 /* 修复登录页面在linux下偏移的问题 */
-from>.cbi-map .cbi-value-field {
+form>.cbi-map .cbi-value-field {
     width: 100%;
 }
 
