@@ -1238,6 +1238,12 @@ fieldset > table > tbody > tr:nth-of-type(odd) {
 .cbi-value-field {
     width: 65%;
 }
+
+/* 修复登录页面在linux下偏移的问题 */
+from>.cbi-map .cbi-value-field {
+    width: 100%;
+}
+
 /* fix node-system-admin */
 .node-system-admin .cbi-value-field li div {
     padding: 0 !important;
