@@ -773,8 +773,10 @@ header > .container > .brand {
     font-weight:900;
     letter-spacing:3px;
 }
+
+/* 修复编码问题....锟斤拷锟斤拷？？？ */
 header > .container > a[class="brand"]:after {
-    content:"鎼达拷";
+    content:"\e5ba";
     font-size:14px;
     font-family:Tahoma;
     position: absolute;
@@ -1277,6 +1279,16 @@ fieldset > table > tbody > tr:nth-of-type(odd) {
 
 table table {
     border: none;
+}
+
+/* 修复无线概况的横向滚动问题 */
+fieldset.cbi-section>table.cbi-section-table{
+    margin: 0 0 10px 0 !important;
+}
+
+/* 修复无线概况缩进问题 */
+fieldset.cbi-section>table.cbi-section-table tr.cbi-section-table-row.cbi-rowstyle-1{
+    width: 0%;
 }
 
 .cbi-value-field table {
