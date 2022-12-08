@@ -406,7 +406,8 @@ p#aliyundrive-webdav_status b {
 /* 修复 接口-物理配置 页面图标显示问题 */
 /* 修复 防火墙配置图标显示问题(停用此方式) */
 /* 使用更好的方式解决此问题 */
-.cbi-value-field>ul>li>label>img {
+/* 匹配其他页面接口栏图标 */
+.cbi-value-field>ul>li>label img {
     width: 32px !important;
     height: 32px !important;
 }
